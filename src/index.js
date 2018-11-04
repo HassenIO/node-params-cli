@@ -1,6 +1,6 @@
-import format from './format';
+import parser from './parser';
 
-const params = format(process.argv);
+const params = parser(process.argv);
 
 export const script = () => process.argv[1];
 export const has = key => !!params[key];

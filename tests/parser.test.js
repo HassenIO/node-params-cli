@@ -1,13 +1,13 @@
-import format from '../src/format';
+import parser from '../src/parser';
 
 test('should parse correctly when argv is key=value', () => {
-  expect(format(['key=value'])).toEqual({
+  expect(parser(['key=value'])).toEqual({
     key: 'value'
   });
 });
 
 test('should parse correctly when argv contains multiple key=value', () => {
-  expect(format(['key1=value1', 'key2=value2', 'key3=value3'])).toEqual({
+  expect(parser(['key1=value1', 'key2=value2', 'key3=value3'])).toEqual({
     key1: 'value1',
     key2: 'value2',
     key3: 'value3'
@@ -15,9 +15,9 @@ test('should parse correctly when argv contains multiple key=value', () => {
 });
 
 test('should parse correctly when argv has no values', () => {
-  expect(format([])).toEqual({});
+  expect(parser([])).toEqual({});
 });
 
 test('should parse correctly when argv is empty', () => {
-  expect(format()).toEqual({});
+  expect(parser()).toEqual({});
 });
