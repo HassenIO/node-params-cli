@@ -1,4 +1,4 @@
-import format from './format';
+import format from '../src/format';
 
 test('should parse correctly when argv is key=value', () => {
   expect(format(['key=value'])).toEqual({
