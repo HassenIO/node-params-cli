@@ -15,6 +15,14 @@
       "env"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htaidirt/node-params-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htaidirt/node-params-cli/issues"
+  },
+  "homepage": "https://github.com/htaidirt/node-params-cli#readme",
   "keywords": [
     "cli",
     "arg",
